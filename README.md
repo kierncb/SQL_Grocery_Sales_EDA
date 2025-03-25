@@ -1,5 +1,12 @@
 # Grocery Sales Analysis  
 
+### Table of Contents
+- [Project Overview](#project-overview)
+- [Data Structure](#data-structure)
+- [Executive Summary](#executive-summary)
+- [Insights Deep-Dive](#insights-deep-dive)
+- [Recommendations](#recommendations)
+
 ## Project Overview  
 This project analyzes grocery sales data to extract valuable insights and optimize business strategies. By leveraging SQL queries, the analysis provides detailed reports on sales trends and patterns over a four-month period.  
 
