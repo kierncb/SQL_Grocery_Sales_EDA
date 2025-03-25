@@ -15,7 +15,7 @@ Grocery sales database structure as seen below consists of seven tables: categor
 
 ![alt text](<Grocery Sales ERD.png>)
 
-Grocery sales dataset can be found [here](https://www.kaggle.com/datasets/andrexibiza/grocery-sales-dataset).
+*Grocery sales dataset can be found [here](https://www.kaggle.com/datasets/andrexibiza/grocery-sales-dataset).*
 
 ## Executive Summary
 
