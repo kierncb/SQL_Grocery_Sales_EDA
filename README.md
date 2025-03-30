@@ -61,9 +61,9 @@ To increase grocery sales, it is important to focus on product categories, custo
 
 ### Customer Purchase Behavior:
 
-- Lesley Perry generated the highest net sales (₱269.9K) despite not having the highest purchase frequency, likely due to a higher average order value (₱1,237.88).
+- Lesley Perry generated the highest net sales (269.9K) despite not having the highest purchase frequency, likely due to a higher average order value (1,237.88).
 
-- Rosa Shelton had the highest purchase frequency (229 orders) but had the lowest average order value (₱1,024.71), leading to lower net sales.
+- Rosa Shelton had the highest purchase frequency (229 orders) but had the lowest average order value (1,024.71), leading to lower net sales.
 
 - All top customers are repeat buyers, highlighting strong customer retention.
 
