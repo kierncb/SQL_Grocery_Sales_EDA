@@ -1,4 +1,5 @@
 /*
+
 Top Products Identification
 	Objective: 
 		Determine which products are the best and worst performers within the dataset timeframe.
@@ -9,25 +10,25 @@ Top Products Identification
 		Examine the impact of product classifications on sales performance.
 */
 
-WITH sales_data AS (
-	-- Extract relevant data: Category ID, product name, and total price calculation  
-    SELECT  
-        products.CategoryID,  
-        products.ProductName,  
-        SUM(COALESCE(TRY_CAST(sales.Quantity AS INT), 0) * COALESCE(products.Price, 0) * 
-            (1 - COALESCE(TRY_CAST(sales.Discount AS DECIMAL(10,2)), 0))) AS total_price  
-    FROM sales
-    LEFT JOIN products ON sales.ProductID = products.ProductID
-    GROUP BY products.CategoryID, products.ProductName
-)  
--- Retrieve category names for better readability  
--- Rank products based on total revenue in descending order  
-SELECT  TOP 5
-    RANK() OVER (ORDER BY sales_data.total_price DESC) AS revenue_rank,
-    categories.CategoryName AS product_category,
-    sales_data.ProductName AS product_name,  
-    ROUND(sales_data.total_price, 2) AS total_revenue
+SELECT TOP 5
+	category_name,
+	product_name,
+	net_sales,
+	RANK() OVER (ORDER BY net_sales DESC) AS ranking
 
-FROM sales_data
-LEFT JOIN categories ON categories.CategoryID = sales_data.CategoryID
-ORDER BY sales_data.total_price DESC
+FROM (
+	SELECT  
+		categories.CategoryName AS category_name,  
+		products.ProductName AS product_name,  
+		ROUND(SUM(COALESCE(TRY_CAST(sales.Quantity AS INT), 0) * COALESCE(products.Price, 0) * 
+		(1 - COALESCE(TRY_CAST(sales.Discount AS DECIMAL(10,2)), 0))), 2) AS net_sales 
+
+	FROM sales
+	LEFT JOIN products ON sales.ProductID = products.ProductID
+	LEFT JOIN categories ON categories.CategoryID = products.CategoryID
+
+	GROUP BY
+		categories.CategoryName, 
+		products.ProductName
+
+) AS ranked_net_sales
