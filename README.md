@@ -26,67 +26,56 @@ Grocery sales database structure as seen below consists of seven tables: categor
 
 ## Executive Summary
 
-Confections led sales, peaking at $132.8M in January 2018, while Meat, Poultry, and Cereals remained strong performers. Repeat buyers like Wayne Chan drove revenue, with high purchase frequency and basket sizes. The top-selling product, Bread - Calabrese Baguette, earned $18.87M, alongside strong sales in Cereals and Beverages. Shelby Riddle led in total sales ($189.41M), while Julie Dyer handled the most transactions. Tucson, Jackson, and Sacramento topped U.S. sales, contributing to a total revenue of $4.33B.
+Confections led sales, peaking at ₱132.8M in January 2018, while Meat and Poultry remained strong performers. Repeat buyers like Lesley Perry contributed significantly to revenue, with high purchase frequency and basket sizes. Among products, Bread - Calabrese Baguette (₱18.87M) was the top seller, followed by Shrimp - 31/40 (₱18.72M) and Puree - Passion Fruit (₱18.70M). In sales performance, Devon Brewer led with ₱190.04M in total sales, while Shelby Riddle and Julie Dyer followed closely with competitive performance. Additionally, top-performing cities, including Tucson, Jackson, and Sacramento, Fort Wayne, and Indianapolis contributed a total of ₱240.52M in sales.
 
 To increase grocery sales, it is important to focus on product categories, customer retention, sales efficiency, high-performing products, and regional strategies. Grocery stores can achieve business growth by expanding popular items, improving loyalty programs, and enhancing the sales team’s performance. Additionally, maintaining stock availability, bundling products, and targeting key cities can help maximize revenue. By applying these strategies, grocery stores can strengthen their market position and achieve long-term success.
 
 ## Insights Deep-Dive
 ### Sales Performance:
 
-- Confections consistently led in sales every month, with the highest sales in January 2018 ($132.8M).
+- Confections consistently led sales from January to April 2018, peaking at ₱132.8M in January.
 
-- Meat, Poultry, and Cereals followed as strong-performing categories, with sales ranging between $29.7M to $117M per month.
+- Meat and Poultry followed similar trends, with Meat maintaining second place.
 
-- Snails had the lowest total sales among the top 5 categories but still maintained a steady contribution.
+- The data suggests that the first four months had stable demand, while May saw a significant decline across all categories.
 
-- Sales generally increased from January to April 2018 but declined significantly across all categories in May. 
-
-| Month  | Product Category | Total Sales (USD) |
-|--------|-----------------|-------------------|
-| ***2018-05*** | ***Confections*** | ***38,865,310.55*** |
-| 2018-05 | Meat | 34,267,238.10 |
-| 2018-05 | Poultry | 30,570,020.35 |
-| 2018-05 | Cereals | 29,794,319.91 |
-| 2018-05 | Beverages | 25,415,764.67 |
-| ***2018-04*** | ***Confections*** | ***128,067,528.90*** |
-| 2018-04 | Meat | 113,668,025.70 |
-| 2018-04 | Poultry | 101,459,715.70 |
-| 2018-04 | Cereals | 98,297,573.41 |
-| 2018-04 | Snails | 85,700,809.38 |
-| ***2018-03*** | ***Confections*** | ***132,593,219.50*** |
-| 2018-03 | Meat | 117,513,943.50 |
-| 2018-03 | Poultry | 104,739,610.60 |
-| 2018-03 | Cereals | 102,170,027.90 |
-| 2018-03 | Snails | 88,317,115.21 |
-| ***2018-02*** | ***Confections*** | ***119,022,995.20*** |
-| 2018-02 | Meat | 105,350,958.70 |
-| 2018-02 | Poultry | 94,272,649.27 |
-| 2018-02 | Cereals | 91,660,789.56 |
-| 2018-02 | Snails | 79,984,136.47 |
-| ***2018-01*** | ***Confections*** | ***132,815,141.60*** |
-| 2018-01 | Meat | 117,126,752.40 |
-| 2018-01 | Poultry | 104,779,706.30 |
-| 2018-01 | Cereals | 101,202,044.30 |
-| 2018-01 | Snails | 88,950,227.96 |
+| sales_date | category_name | net_sales |
+|------------|--------------|------------|
+| 2018-01    | Confections  | 132,815,141.60 |
+| 2018-01    | Meat        | 117,126,752.40 |
+| 2018-01    | Poultry     | 104,779,706.30 |
+| 2018-02    | Confections  | 119,022,995.20 |
+| 2018-02    | Meat        | 105,350,958.70 |
+| 2018-02    | Poultry     | 94,272,649.27  |
+| 2018-03    | Confections  | 132,593,219.50 |
+| 2018-03    | Meat        | 117,513,943.50 |
+| 2018-03    | Poultry     | 104,739,610.60 |
+| 2018-04    | Confections  | 128,067,528.90 |
+| 2018-04    | Meat        | 113,668,025.70 |
+| 2018-04    | Poultry     | 101,459,715.70 |
+| 2018-05    | Confections  | 38,865,310.55  |
+| 2018-05    | Meat        | 34,267,238.10  |
+| 2018-05    | Poultry     | 30,570,020.35  |
 
 *View my SQL queries [here](monthly_sales_performance.sql).*
 
 ### Customer Purchase Behavior:
-- Wayne Chan has the highest purchase frequency (103) and total spent amount (130,324.16).
 
-- Ronda Wallace records the highest average order value (1,297.05) despite ranking third in total spent.
+- Lesley Perry generated the highest net sales (₱269.9K) despite not having the highest purchase frequency, likely due to a higher average order value (₱1,237.88).
 
-- Olivia Dean, Ericka O’Connor, and Paula Lin exhibit consistent spending patterns, with average order values ranging from 1,258.85 to 1,269.62.
+- Rosa Shelton had the highest purchase frequency (229 orders) but had the lowest average order value (₱1,024.71), leading to lower net sales.
 
-- All top customers are repeat buyers with an average basket size of approximately 25, indicating strong purchasing consistency.
+- All top customers are repeat buyers, highlighting strong customer retention.
 
-| Full Name          | Purchase Frequency | Customer Type  | Average Order Value | Average Basket Size | Total Spent   |
-|--------------------|-------------------|---------------|---------------------|--------------------|--------------|
-| Wayne Chan        | 103               | Repeat Buyer  | 1,265.28           | 24                 | 130,324.16   |
-| Olivia Dean       | 97                | Repeat Buyer  | 1,268.09           | 25                 | 123,004.86   |
-| Ronda Wallace     | 94                | Repeat Buyer  | 1,297.05           | 25                 | 121,922.59   |
-| Ericka O'Connor   | 96                | Repeat Buyer  | 1,269.62           | 25                 | 121,883.95   |
-| Paula Lin         | 96                | Repeat Buyer  | 1,258.85           | 25                 | 120,849.78   |
+- Average basket size remains consistent (20-23 items), suggesting stable purchasing behavior among repeat buyers.
+
+| customer_name  | customer_type  | purchase_frequency | average_order_value | average_basket_size | net_sales   |
+|---------------|---------------|--------------------|---------------------|--------------------|------------|
+| Lesley Perry  | Repeat Buyer  | 218                | 1,237.88            | 23                 | 269,858.03  |
+| Beth Underwood | Repeat Buyer  | 208                | 1,167.57            | 23                 | 242,855.11  |
+| Alberto Lamb  | Repeat Buyer  | 223                | 1,082.09            | 21                 | 241,305.79  |
+| Rosa Shelton  | Repeat Buyer  | 229                | 1,024.71            | 20                 | 234,658.99  |
+| Colleen Bass  | Repeat Buyer  | 209                | 1,120.22            | 21                 | 234,126.57  |
 
 *View my SQL queries [here](customer_purchase_behavior.sql).*
 
@@ -100,33 +89,33 @@ To increase grocery sales, it is important to focus on product categories, custo
 
 - The revenue difference between the highest and lowest-ranked products in the top five is minimal, indicating strong sales performance across multiple categories.
 
-| Revenue Rank | Product Category | Product Name                     | Total Revenue     |
-|-------------|-----------------|---------------------------------|----------------|
-| 1           | Dairy           | Bread - Calabrese Baguette      | 18,868,838.46  |
-| 2           | Cereals         | Shrimp - 31/40                 | 18,721,942.13  |
-| 3           | Beverages       | Puree - Passion Fruit          | 18,703,480.12  |
-| 4           | Beverages       | Tia Maria                      | 18,685,124.71  |
-| 5           | Snails          | Zucchini - Yellow              | 18,551,657.91  |
+| category_name | product_name                | net_sales     | ranking |
+|--------------|----------------------------|--------------|---------|
+| Dairy        | Bread - Calabrese Baguette  | 18,868,838.46 | 1       |
+| Cereals      | Shrimp - 31/40              | 18,721,942.13 | 2       |
+| Beverages    | Puree - Passion Fruit       | 18,703,480.12 | 3       |
+| Beverages    | Tia Maria                   | 18,685,124.71 | 4       |
+| Snails       | Zucchini - Yellow           | 18,551,657.91 | 5       |
 
 *View my SQL queries [here](top_products_identification.sql).*
 
 ### Salesperson Effectiveness:
 
-- Shelby Riddle leads in total sales (189.41M) despite ranking second in transactions (293,562).
+- Devon Brewer achieved the highest net sales (₱190M) with 294,983 transactions, leading in both metrics.
 
-- Julie Dyer has the highest number of transactions (294,449) but slightly lower total sales (188.86M).
+- Shelby Riddle and Julie Dyer closely follow, with minor differences in transactions and net sales, indicating a competitive sales team.
 
-- Daphne King, Nicole Fuller, and Pablo Cline follow closely, all exceeding 187.5M in total sales.
+- Nicole Fuller and Seth Franco had slightly lower transactions and sales, but the gap is minimal, showing consistent performance across all salespersons.
 
-- The sales performance among the top five salespersons is highly competitive, with a narrow revenue gap.
+- Overall, sales distribution among the top performers is balanced, with no significant outliers.
 
-| Employee ID | Sales Person   | Transactions | Total Sales      |
-|------------|---------------|--------------|------------------|
-| 20         | Shelby Riddle | 293,562      | 189,413,136.40   |
-| 8          | Julie Dyer    | 294,449      | 188,862,586.80   |
-| 9          | Daphne King   | 294,180      | 187,854,115.60   |
-| 1          | Nicole Fuller | 293,394      | 187,649,473.60   |
-| 3          | Pablo Cline   | 293,175      | 187,529,449.80   |
+| sales_person   | transactions | net_sales      |
+|---------------|-------------|---------------|
+| Devon Brewer  | 294,983     | 190,042,744.00 |
+| Shelby Riddle | 293,562     | 189,413,136.40 |
+| Julie Dyer    | 294,449     | 188,862,586.80 |
+| Nicole Fuller | 293,394     | 187,649,473.60 |
+| Seth Franco   | 292,521     | 186,320,422.50 |
 
 *View my SQL queries [here](salesperson_effectiveness.sql).*
 
