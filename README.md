@@ -143,36 +143,30 @@ To increase grocery sales, it is important to focus on product categories, custo
 
 *View my SQL quesries [here](geographical_sales.sql).*
 
-## Recommendations
-1. **Optimize Product Category Performance**
+## Recommendations  
 
-    - **Boost High-Demand Items**: Confections bring in the most revenue. Stock more, add new varieties, and run promotions to increase sales.
+### 1. **Optimize Product Category Performance**  
 
-    - **Tackle Seasonal Slumps**: Sales dropped in May. Analyze the cause (demand shifts, supply issues) and find ways to prevent future declines.
+- **Boost High-Demand Items**: Confections generate the highest revenue, peaking at **$132.8M in January 2018**. Increase stock, introduce new varieties, and run promotions to maintain demand.  
+- **Tackle Seasonal Slumps**: Sales dropped significantly in May across all categories. Investigate the cause (e.g., demand shifts, supply chain issues) and implement strategies to stabilize sales.  
+- **Improve Slow Sellers**: Snails rank among the lower-performing categories. Use promotions, bundles, or pricing adjustments to increase sales.  
 
-    - **Improve Slow Sellers**: Snails sell steadily but rank low. Use promos, bundles, or price changes to boost sales.
+### 2. **Strengthen Customer Retention & Engagement**  
 
-2. **Strengthen Customer Retention & Engagement**
-    
-    - **Personalized Deals for Top Customers**: Wayne Chan and Ronda Wallace buy consistently. Use discounts, rewards, or targeted promos to boost loyalty.
+- **Personalized Deals for Top Customers**: **Lesley Perry and Beth Underwood** are top repeat buyers, making frequent purchases with high basket sizes. Offer exclusive discounts, loyalty rewards, or targeted promotions to strengthen engagement.  
+- **Encourage Bigger Purchases**: Top customers purchase around **20-23 items per order**. Implement bulk discounts, personalized recommendations, or cross-selling strategies to increase basket size and revenue.  
 
-    - **Encourage Bigger Purchases**: Top customers buy around 25 items per order. Offer bulk discounts, recommendations, or cross-sells to increase basket size.
+### 3. **Enhance Sales Team Efficiency**  
 
-3. **Enhance Sales Team Efficiency**
+- **Reward Top Salespeople**: **Devon Brewer leads in total sales ($190.04M)**, while **Shelby Riddle and Julie Dyer** also show competitive performance. Implement incentives for both revenue generation and high transaction volume.  
+- **Optimize Sales Strategies**: Analyze the selling techniques of top performers to refine best practices, improve customer conversion rates, and drive team-wide sales growth.  
 
-    - **Reward Top Salespeople**: Shelby Riddle leads in sales, while Julie Dyer handles the most transactions. Incentives for both revenue and engagement can boost performance.
+### 4. **Expand High-Performing Product Lines**  
 
-    - **Optimize Sales Strategies**: Study top performers' techniques to refine best practices, improve conversions, and drive team-wide growth.
+- **Keep Bestsellers in Stock**: The top-selling product, **Bread - Calabrese Baguette ($18.87M)**, along with **Shrimp - 31/40 ($18.72M)** and **Puree - Passion Fruit ($18.70M)**, are key revenue drivers. Ensure a steady supply to prevent stock shortages.  
+- **Boost Sales with Bundles**: Offer bundle deals, such as **Tia Maria paired with other beverages** or **Calabrese Baguette with dairy discounts**, to encourage higher-value purchases.  
 
-4. **Expand High-Performing Product Lines**
+### 5. **Optimize Regional Sales Strategies**  
 
-    - **Keep Bestsellers in Stock**: Top items like Calabrese Baguette and Shrimp (31/40) drive revenue. Ensure enough inventory to avoid stockouts.
-
-    - **Boost Sales with Bundles**: Pair Tia Maria with other drinks or offer dairy discounts with Calabrese Baguette to increase purchases.
-
-5. **Optimize Regional Sales Strategies**
-    
-    
-    - **City-Specific Marketing**: Tucson, Jackson, and Sacramento lead in sales. Use local promotions and optimize inventory to boost revenue.
-
-    - **Expand Strategically**: Study buying trends in top cities to find the best locations for growth and distribution.
+- **City-Specific Marketing**: **Tucson, Jackson, Sacramento, Fort Wayne, and Indianapolis are the top-performing cities**, contributing a total of **$240.52M in sales**. Tailor marketing strategies and optimize inventory allocation to maximize regional performance.  
+- **Expand Strategically**: Analyze purchasing trends in high-performing cities to identify the best locations for expansion and improved distribution strategies.
