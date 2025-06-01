@@ -143,6 +143,12 @@ To increase grocery sales, it is important to focus on product categories, custo
 
 *View my SQL quesries [here](geographical_sales.sql).*
 
+## Tabealu Dashboard
+
+![alt text](grocery_sales_dashboard.png)
+
+*View my Tableau dashboard [here](https://public.tableau.com/views/GrocerySales_17431629733840/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)*.
+
 ## Recommendations  
 
 ### 1. **Optimize Product Category Performance**  
