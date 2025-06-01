@@ -5,6 +5,7 @@
 - [Data Structure](#data-structure)
 - [Executive Summary](#executive-summary)
 - [Insights Deep-Dive](#insights-deep-dive)
+- [Tableau Dashboard](#tabealu-dashboard)
 - [Recommendations](#recommendations)
 
 ## Project Overview  
